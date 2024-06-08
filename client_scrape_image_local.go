@@ -6,6 +6,8 @@ import (
 	"io"
 	"net/http"
 	"os"
+
+	"github.com/rs/xid"
 )
 
 func (c *defaultClient) ScrapeImageLocal(imageUrl string, fileName string) (*FileData, error) {
